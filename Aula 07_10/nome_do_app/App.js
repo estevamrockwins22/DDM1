@@ -1,12 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  TextInput,
+  Button
+} from 'react-native';
 
 export default function App() {
   return (
-    <ScrollView style={styles.container}>
-      <Text>Digite aqui</Text>
-      <TextInput placeholder="teste"></TextInput>
-      <Button onpress=''title="Botão"></Button>
+    <ScrollView style={styles.scflex}>
+
+      <View style={styles.container}>
+        <Text>Digite aqui</Text>
+
+        <TextInput placeholder="teste"></TextInput>
+
+        <Button
+          onPress={() => {}}
+          title="botão">
+        </Button>
+      </View>
+
     </ScrollView>
   );
 }
@@ -14,12 +30,12 @@ export default function App() {
 const styles = StyleSheet.create({
   scflex: {
     flex: 1,
-    backgroundColor: #ddb91b,
+    backgroundColor: '#222266',
   },
-  
+
   container: {
     flex: 1,
-    backgroundColor: '#020202',
+    backgroundColor: '#000444',
     alignItems: 'center',
     justifyContent: 'center',
   },
